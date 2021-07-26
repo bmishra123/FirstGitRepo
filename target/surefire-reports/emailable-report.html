@@ -1,0 +1,74 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>TestNG:  Unit Test</title>
+<style type="text/css">
+table caption,table.info_table,table.result,table.passed,table.failed {margin-bottom:10px;border:1px solid #000099;border-collapse:collapse;empty-cells:show;}
+table.info_table td,table.info_table th,table.result td,table.result th,table.passed td,table.passed th,table.failed td,table.failed th {
+border:1px solid #000099;padding:.25em .5em .25em .5em
+}
+table.result th {vertical-align:bottom}
+tr.param th {padding-left:1em;padding-right:1em}
+tr.param td {padding-left:.5em;padding-right:2em}
+td.numi,th.numi,td.numi_attn {
+text-align:right
+}
+tr.total td {font-weight:bold}
+table caption {
+text-align:center;font-weight:bold;
+}
+table.passed tr.stripe td,table tr.passedodd td {background-color: #00AA00;}
+table.passed td,table tr.passedeven td {background-color: #33FF33;}
+table.passed tr.stripe td,table tr.skippedodd td {background-color: #cccccc;}
+table.passed td,table tr.skippedodd td {background-color: #dddddd;}
+table.failed tr.stripe td,table tr.failedodd td,table.result td.numi_attn {background-color: #FF3333;}
+table.failed td,table tr.failedeven td,table.result tr.stripe td.numi_attn {background-color: #DD0000;}
+tr.stripe td,tr.stripe th {background-color: #E6EBF9;}
+p.totop {font-size:85%;text-align:center;border-bottom:2px black solid}
+div.shootout {padding:2em;border:3px #4854A8 solid}
+</style>
+</head>
+<body>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr><th>Test</th><th class="numi">Methods<br/>Passed</th><th class="numi">Scenarios<br/>Passed</th><th class="numi"># skipped</th><th class="numi"># failed</th><th class="numi">Total<br/>Time</th><th class="numi">Included<br/>Groups</th><th class="numi">Excluded<br/>Groups</th></tr>
+<tr><td style="text-align:left;padding-right:2em">Command line test</td><td class="numi">0</td><td class="numi">0</td><td class="numi">0</td><td class="numi_attn">1</td><td class="numi">0.3 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+</table>
+<table cellspacing="0" cellpadding="0" class="passed" id="summary">
+<tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Start</th><th>Time<br/>(ms)</th></tr>
+<tr><th colspan="4">Command line test &#8212; failed</th></tr>
+<tr class="failedodd"><td rowspan="1">testclass.RunTest</td><td><a href="#m1"><b>testsample</b>  </a></td><td class="numi">1</td><td>1626685553060</td><td class="numi">238</td></tr>
+</table>
+<h1>Command line test</h1>
+<h2 id="m1">testclass.RunTest:testsample</h2>
+<div style="padding-left:3em">
+<p>null</p>
+pageclass.BaseClass.getWebUrl(BaseClass.java:20)
+<br/>at testclass.RunTest.testsample(RunTest.java:18)
+<br/>34 lines not shown
+<p>Caused by Can&apos;t convert &apos;C:\Users\bi050\eclipse-workspace_new1\METests\src\main\java\pageclass\prod.properties&apos; to a valid URI</p>
+org.aeonbits.owner.Util.unsupported(Util.java:124)
+<br/>at org.aeonbits.owner.PropertiesManager.toURIs(PropertiesManager.java:134)
+<br/>at org.aeonbits.owner.PropertiesManager.&lt;init&gt;(PropertiesManager.java:105)
+<br/>at org.aeonbits.owner.DefaultFactory.create(DefaultFactory.java:43)
+<br/>at org.aeonbits.owner.ConfigFactory.create(ConfigFactory.java:66)
+<br/>at pageclass.WebConfig.&lt;clinit&gt;(WebConfig.java:15)
+<br/>at pageclass.BaseClass.getWebUrl(BaseClass.java:20)
+<br/>at testclass.RunTest.testsample(RunTest.java:18)
+<br/>34 lines not shown
+<p>Caused by Illegal character in opaque part at index 2: C:\Users\bi050\eclipse-workspace_new1\METests\src\main\java\pageclass\prod.properties</p>
+java.net.URI$Parser.fail(URI.java:2848)
+<br/>at java.net.URI$Parser.checkChars(URI.java:3021)
+<br/>at java.net.URI$Parser.parse(URI.java:3058)
+<br/>at java.net.URI.&lt;init&gt;(URI.java:588)
+<br/>at org.aeonbits.owner.ConfigURIFactory.newURI(ConfigURIFactory.java:39)
+<br/>at org.aeonbits.owner.PropertiesManager.toURIs(PropertiesManager.java:130)
+<br/>at org.aeonbits.owner.PropertiesManager.&lt;init&gt;(PropertiesManager.java:105)
+<br/>at org.aeonbits.owner.DefaultFactory.create(DefaultFactory.java:43)
+<br/>at org.aeonbits.owner.ConfigFactory.create(ConfigFactory.java:66)
+<br/>at pageclass.WebConfig.&lt;clinit&gt;(WebConfig.java:15)
+<br/>at pageclass.BaseClass.getWebUrl(BaseClass.java:20)
+<br/>at testclass.RunTest.testsample(RunTest.java:18)
+<br/>34 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+</body></html>

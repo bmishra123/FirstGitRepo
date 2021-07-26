@@ -1,0 +1,25 @@
+-------------------------------------------------------------------------------
+Test set: testclass.RunTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 1.532 sec <<< FAILURE!
+testsample(testclass.RunTest)  Time elapsed: 0.246 sec  <<< FAILURE!
+java.lang.ExceptionInInitializerError
+	at pageclass.BaseClass.getWebUrl(BaseClass.java:20)
+	at testclass.RunTest.testsample(RunTest.java:18)
+Caused by: java.lang.UnsupportedOperationException: Can't convert 'C:\Users\bi050\eclipse-workspace_new1\METests\src\main\java\pageclass\prod.properties' to a valid URI
+	at org.aeonbits.owner.Util.unsupported(Util.java:124)
+	at org.aeonbits.owner.PropertiesManager.toURIs(PropertiesManager.java:134)
+	at org.aeonbits.owner.PropertiesManager.<init>(PropertiesManager.java:105)
+	at org.aeonbits.owner.DefaultFactory.create(DefaultFactory.java:43)
+	at org.aeonbits.owner.ConfigFactory.create(ConfigFactory.java:66)
+	at pageclass.WebConfig.<clinit>(WebConfig.java:15)
+	... 35 more
+Caused by: java.net.URISyntaxException: Illegal character in opaque part at index 2: C:\Users\bi050\eclipse-workspace_new1\METests\src\main\java\pageclass\prod.properties
+	at java.net.URI$Parser.fail(URI.java:2848)
+	at java.net.URI$Parser.checkChars(URI.java:3021)
+	at java.net.URI$Parser.parse(URI.java:3058)
+	at java.net.URI.<init>(URI.java:588)
+	at org.aeonbits.owner.ConfigURIFactory.newURI(ConfigURIFactory.java:39)
+	at org.aeonbits.owner.PropertiesManager.toURIs(PropertiesManager.java:130)
+	... 39 more
+
